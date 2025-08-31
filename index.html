@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloroma</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="parent">
+        <div id="child1">
+            <h1 id="heading">Coloroma</h1>
+        </div>
+        <div id="child2">
+            <div id="area" contenteditable="true">Type your text here...</div>
+        </div>
+        <div id="child3"> <button id="download-btn">Download</button></div>
+        <div id="child4">
+            <div id="bgcolor">
+                <h2>Choose BG Color</h2>
+                <div>
+                <button class="btn" style="background-color: red;" onclick="changeBGcolor('red')"></button>
+                <button class="btn" style="background-color: green;" onclick="changeBGcolor('green')"></button>
+                <button class="btn" style="background-color: yellow;" onclick="changeBGcolor('yellow')"></button>
+                <button class="btn" style="background-color: blue;" onclick="changeBGcolor('blue')"></button>
+                <input type="color" oninput="changeBGcolor(event.target.value)">
+                </div>
+            </div>
+            
+            <div id="textcolor">
+                <h2>Choose Text Color</h2>
+                <div>
+                <button class="btn" style="background-color: red;" onclick="changeTextcolor('red')"></button>
+                <button class="btn" style="background-color: rgb(249, 249, 249);"
+                    onclick="changeTextcolor('white')"></button>
+                <button class="btn" style="background-color: rgb(60, 255, 0);"
+                    onclick="changeTextcolor('green')"></button>
+                <button class="btn" style="background-color: rgb(0, 255, 255);"
+                    onclick="changeTextcolor('sky')"></button>
+                <input type="color" oninput="changeTextcolor(event.target.value)">
+                </div>
+            </div>
+            <div id="bgimage">
+                
+                <h2>Choose BG Image</h2>
+                <div>
+                <button class="btn" style="background-image:url('im1.jpg') ;"
+                    onclick="changeBGimage('im1.jpg')"></button>
+                <button class="btn" style="background-image:url('im2.jpg') ;"
+                    onclick="changeBGimage('im2.jpg')"></button>
+                <button class="btn" style="background-image:url('im3.jpg') ;"
+                    onclick="changeBGimage('im3.jpg')"></button>
+                <button class="btn" style="background-image:url('im4.jpg') ;"
+                    onclick="changeBGimage('im4.jpg')"></button>
+                    </div>
+            </div>
+            <div id="font">
+                <h2>Choose Font Family</h2><br>
+                <div>
+                <span style="font-family: vardana;" onclick="changeFont('cursive')">hello</span>
+                <span style="font-family: cursive;" onclick="changeFont('vardana')">hello</span>
+                <span style="font-family: Impact;" onclick="changeFont('Impact')">hello</span>
+                <span style="font-family: Georgia;" onclick="changeFont('Georgia')">hello</span>
+</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

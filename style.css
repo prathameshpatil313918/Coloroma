@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
+}
+
+#heading {
+
+    font-size: 50px;
+    background: linear-gradient(red, yellow);
+    color: transparent;
+    background-clip: text;
+}
+
+#child2 {
+    width: 70%;
+}
+
+#area {
+    height: 15rem;
+    border: 1px solid black;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+#download-btn {
+    height: 42px;
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#child4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 15px;
+
+}
+
+#bgcolor,
+#textcolor,
+#bgimage,
+#font {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 260px;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.btn {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+span {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+
+}
