@@ -78,7 +78,7 @@
     cursor: pointer;
     height: 35px;
     width: 35px;
-    border: none;
+    border: 1px solid black;
     border-radius: 50%;
 
 }
@@ -90,3 +90,4 @@ span {
 
 
 }
+
